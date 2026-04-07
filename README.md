@@ -144,8 +144,11 @@ Based on the analysis:
 Google-Data-Analytics-Capstone-Cyclistic/
 ├── README.md
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   ├── processed/
+        ├── Cyclistic_Bike-Share_Cleaned.zip
+│   └── raw/
+        ├── Divvy_Trips_2019_Q1.zip
+        ├── Divvy_Trips_2020_Q1.zip
 ├── notebooks/
 │   └── Cyclistic_Bike-Share_etl_eda.ipynb
 ├── reports/
