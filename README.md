@@ -148,13 +148,14 @@ Google-Data-Analytics-Capstone-Cyclistic/
 │   └── processed/
 ├── notebooks/
 │   └── Cyclistic_Bike-Share_etl_eda.ipynb
-├── src/
+├── reports/
+│   └── Cyclistic_Bike-Share_Report.pdf
 ├── results/
+    ├── charts/
+        ├── avg_length.png  
 │   ├── Cyclistic_Bike-Share_Analysis.xlsx
 │   ├── Cyclistic_Bike-Share_Analysis.twbx
 │   ├── Cyclistic_Bike-Share_Presentation.pptx
-├── reports/
-│   └── Cyclistic_Bike-Share_Report.pdf
 └── .gitignore
 ```
 ### 📊 Excel Dashboard
