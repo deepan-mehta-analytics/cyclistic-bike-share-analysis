@@ -157,7 +157,11 @@ Google-Data-Analytics-Capstone-Cyclistic/
 │   └── cyclistic_case_study.pdf
 └── .gitignore
 ```
+### 📊 Excel Dashboard
 
+Due to file size limitations, the full Excel dashboard is available here:
+
+👉 [View Excel Dashboard](https://docs.google.com/spreadsheets/d/1FFkyD4qh74p4Z9GKBIELzyRPFqUm7nsd/edit?usp=sharing&ouid=105860754497024281787&rtpof=true&sd=true)
 ---
 
 ## 📊 Visualizations
@@ -172,12 +176,7 @@ Key visualizations include:
 
 (See `/results/` folder for full dashboards and charts)
 
-### 📊 Excel Dashboard
 
-Due to file size limitations, the full Excel dashboard is available here:
-
-👉 [View Excel Dashboard](https://docs.google.com/spreadsheets/d/1FFkyD4qh74p4Z9GKBIELzyRPFqUm7nsd/edit?usp=sharing&ouid=105860754497024281787&rtpof=true&sd=true)
----
 
 ## 📌 Project Outcome
 
