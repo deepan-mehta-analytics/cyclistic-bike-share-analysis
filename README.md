@@ -91,19 +91,27 @@ The analysis explores user behavior across multiple dimensions:
 
 ### Ride Distribution
 
-![Ride Distribution](results/charts/ride_distribution.png)
+<p align="left">
+  <img src="results/charts/ride_distribution.png" width="450">
+</p>
 
 ### Average Ride Length
 
-![Average Ride Length](results/charts/avg_length.png)
+<p align="left">
+  <img src="results/charts/avg_length.png" width="450">
+</p>
 
 ### Weekly Usage Pattern
 
-![Weekly Pattern](results/charts/weekly.png)
+<p align="left">
+  <img src="results/charts/weekly.png" width="450">
+</p>
 
 ### Hourly Usage Pattern
 
-![Hourly Pattern](results/charts/hourly.png)
+<p align="left">
+  <img src="results/charts/hourly.png" width="450">
+</p>
 
 ---
 
