@@ -202,6 +202,6 @@ This project demonstrates:
 ## 👤 Author
 
 **Deepan Mehta**
-Data Analytics | Future Data Engineer
+Data Analytics | preparing for Data Engineer
 
 ---
