@@ -6,77 +6,77 @@
 
 ## 📌 Project Overview
 
-This project analyzes historical bike-share data from Cyclistic (Divvy Bikes) to understand behavioral differences between **casual riders** and **annual members**.
+This project performs an end-to-end data analysis of Cyclistic (Divvy Bike Share) trip data to identify behavioral differences between **casual riders** and **annual members**.
 
-The primary objective is to identify data-driven insights that can support **marketing strategies aimed at converting casual riders into long-term members**.
-
-This case study follows a structured data analytics workflow including **data extraction, transformation, exploratory analysis, and visualization**.
+The objective is to generate actionable insights that support **membership conversion strategies**, improving long-term revenue stability.
 
 ---
 
-## 🎯 Business Objective
+## 🎯 Business Problem
 
-Cyclistic aims to increase profitability by converting casual users into members.
+Cyclistic’s business model depends on increasing the number of annual members.
 
-This analysis answers the key question:
+The key analytical question addressed:
 
-> **How do casual riders and members use Cyclistic bikes differently, and how can this inform conversion strategies?**
+> **How do casual riders and members use Cyclistic bikes differently, and how can these insights inform targeted conversion strategies?**
 
 ---
 
-## 📊 Dataset Description
+## 📊 Dataset
 
 * **Source:** Divvy Bike Share
-* **Time Period:** 2019 Q1 & 2020 Q1
-* **Records:** ~791,000 rides (cleaned to ~778,000 after processing)
-* **Format:** CSV
+* **Period:** 2019 Q1 & 2020 Q1
+* **Records:** ~791,000 (cleaned to ~778,000)
+* **Format:** CSV (provided as compressed ZIP files)
 
 ### Key Fields:
 
-* Ride ID
-* Start & End Time
-* Start & End Stations
-* Ride Duration
-* User Type (Member / Casual)
+* Ride timestamps (start/end)
+* Station information
+* Ride duration
+* User classification (Member / Casual)
 
 ---
 
-## ⚙️ ETL Process (Python Pipeline)
+## ⚙️ ETL Pipeline (Python)
 
-A complete ETL pipeline was developed using Python (Pandas) to ensure clean and consistent data for analysis.
+A structured ETL pipeline was implemented using **Pandas** to ensure data quality, consistency, and reproducibility.
 
-### 🔹 Data Extraction
+### 🔹 Extraction
 
-* Loaded multiple CSV datasets (2019 & 2020)
-* Verified schema differences between datasets
+* Loaded multiple datasets (2019 & 2020)
+* Identified schema inconsistencies
 
-### 🔹 Data Transformation
+### 🔹 Transformation
 
-* Standardized column names across datasets
-* Converted datetime fields into consistent format
+* Standardized column naming conventions
+* Converted datetime fields
 * Merged datasets into a unified dataframe
-* Created new analytical features:
 
-  * `ride_length` (minutes)
-  * `day_of_week`
-  * `hour`
-  * `time_period` (Morning / Afternoon / Evening / Night)
-  * `ride_category` (Short / Medium / Long)
+### 🔹 Feature Engineering
 
-### 🔹 Data Cleaning
+* `ride_length` (minutes)
+* `day_of_week`
+* `hour`
+* `time_period` (Morning / Afternoon / Evening / Night)
+* `ride_category` (Short / Medium / Long)
 
-* Removed invalid and negative ride durations
+### 🔹 Cleaning
+
+* Removed invalid and negative durations
 * Filtered extreme outliers (> 90 minutes)
-* Standardized user types:
+* Standardized user types into:
 
-  * Subscriber / Member → **Member**
-  * Customer / Casual → **Casual**
+  * **Member**
+  * **Casual**
+
+The pipeline was designed with a focus on **reproducibility and structured data processing**, aligning with data engineering best practices.
 
 ---
 
-## 📈 Exploratory Data Analysis (EDA)
+## 📈 Exploratory Data Analysis
 
-The dataset was analyzed to uncover behavioral patterns across multiple dimensions:
+The analysis explores user behavior across multiple dimensions:
 
 * Ride volume distribution
 * Average ride duration
@@ -87,123 +87,111 @@ The dataset was analyzed to uncover behavioral patterns across multiple dimensio
 
 ---
 
-## 🔍 Key Insights
+## 📊 Key Visual Insights
 
-### 1. Ride Distribution
+### Ride Distribution
 
-Members account for approximately **92% of total rides**, indicating strong adoption among regular users.
+![Ride Distribution](results/charts/ride_distribution.png)
 
-### 2. Ride Duration
+### Average Ride Length
 
-Casual users take significantly longer rides (~26 minutes) compared to members (~11 minutes), suggesting **leisure-oriented usage**.
+![Average Ride Length](results/charts/avg_length.png)
 
-### 3. Weekly Patterns
+### Weekly Usage Pattern
 
-* Members: Consistent weekday usage
-* Casual users: Peak usage on weekends
+![Weekly Pattern](results/charts/weekly.png)
 
-### 4. Hourly Trends
+### Hourly Usage Pattern
 
-* Members: Peak during commuting hours
-* Casual users: Peak during midday
+![Hourly Pattern](results/charts/hourly.png)
 
-### 5. Time-Based Behaviour
+---
 
-Casual riders show strong afternoon usage, while members demonstrate structured daily patterns.
+## 🔍 Key Findings
 
-### 6. Ride Category
-
-* Members: Predominantly short rides
-* Casual users: Higher proportion of medium and long rides
+* **Members dominate ride volume (~92%)**, indicating strong adoption among regular users
+* **Casual riders take longer trips (~26 min vs ~11 min)**, suggesting leisure usage
+* **Members ride during weekdays**, aligned with commuting behavior
+* **Casual users peak on weekends and afternoons**, indicating recreational usage
+* **Members prefer short rides**, while casual users engage more in medium/long rides
 
 ---
 
 ## 💡 Business Recommendations
 
-Based on the analysis:
-
-* 🎯 Target casual users during **weekends and afternoons**
-* 🎯 Introduce **membership discounts for frequent long rides**
+* 🎯 Target casual riders during **weekends and afternoons**
+* 🎯 Introduce **membership discounts for long-duration users**
 * 🎯 Offer **ride bundles or trial memberships**
-* 🎯 Promote **conversion campaigns focused on leisure users**
+* 🎯 Design campaigns around **leisure usage patterns**
+
+---
+
+## 📁 Dashboards & Outputs
+
+* 📈 **Tableau Dashboard**: Available in `/results/`
+* 📊 **Excel Dashboard**: [View on Google Drive](PASTE_YOUR_LINK_HERE)
+* 📑 **Final Report**: `/reports/Cyclistic_Bike-Share_Report.pdf`
+* 🎥 **Presentation**: `/results/Cyclistic_Bike-Share_Presentation.pptx`
+
+---
+
+## 📂 Repository Structure
+
+```text
+cyclistic-bike-share-analysis/
+├── README.md
+├── data/
+│   ├── processed/
+│   └── raw/
+├── notebooks/
+│   └── Cyclistic_Bike-Share_etl_eda.ipynb
+├── reports/
+├── results/
+│   ├── charts/
+│   ├── *.twbx
+│   └── *.pptx
+└── .gitignore
+```
+
+---
+
+## ▶️ How to Run
+
+1. Extract datasets from `/data/raw/`
+2. Open the notebook:
+   `notebooks/Cyclistic_Bike-Share_etl_eda.ipynb`
+3. Install dependencies:
+   `pip install pandas numpy matplotlib`
+4. Run all cells to reproduce the analysis
 
 ---
 
 ## 🛠 Tools & Technologies
 
-* **Python (Pandas, NumPy)** — ETL & Data Processing
-* **Excel** — Pivot Tables & Dashboarding
-* **Tableau** — Interactive Visualization
-* **Jupyter Notebook** — Analysis Workflow
+* **Python (Pandas, NumPy)** — ETL & Analysis
+* **Excel** — Pivot Tables & Business Analysis
+* **Tableau** — Data Visualization
+* **Jupyter Notebook** — Workflow execution
 
 ---
-
-## 📁 Repository Structure
-
-```
-Google-Data-Analytics-Capstone-Cyclistic/
-├── README.md
-├── data/
-│   ├── processed/
-        ├── Cyclistic_Bike-Share_Cleaned.zip
-│   └── raw/
-        ├── Divvy_Trips_2019_Q1.zip
-        ├── Divvy_Trips_2020_Q1.zip
-├── notebooks/
-│   └── Cyclistic_Bike-Share_etl_eda.ipynb
-├── reports/
-│   └── Cyclistic_Bike-Share_Report.pdf
-├── results/
-    ├── charts/
-        ├── avg_length.png
-        ├── category.png
-        ├── hourly.png
-        ├── ride_distribution.png
-        ├── time.png
-        ├── weekly.png
-│   ├── Cyclistic_Bike-Share_Analysis.xlsx
-│   ├── Cyclistic_Bike-Share_Analysis.twbx
-│   ├── Cyclistic_Bike-Share_Presentation.pptx
-└── .gitignore
-```
-### 📊 Excel Dashboard
-
-Due to file size limitations, the full Excel dashboard is available here:
-
-👉 [View Excel Dashboard](https://docs.google.com/spreadsheets/d/1FFkyD4qh74p4Z9GKBIELzyRPFqUm7nsd/edit?usp=sharing&ouid=105860754497024281787&rtpof=true&sd=true)
----
-
-## 📊 Visualizations
-
-Key visualizations include:
-
-* Ride count distribution by user type
-* Average ride duration comparison
-* Weekly and hourly usage trends
-* Time period segmentation
-* Ride category distribution
-
-(See `/results/` folder for full dashboards and charts)
-
-
 
 ## 📌 Project Outcome
 
 This project demonstrates:
 
 * End-to-end data analytics workflow
-* Real-world ETL pipeline design
-* Behavioral segmentation analysis
+* Structured ETL pipeline development
+* Feature engineering for behavioral analysis
 * Multi-tool data visualization
-* Business-driven insight generation
+* Business-focused insight generation
 
 ---
 
-## 🚀 Future Improvements
+## 🚀 Future Enhancements
 
-* Integration with cloud platforms (GCP / BigQuery)
-* Automation of ETL pipeline
-* Real-time data streaming analysis
+* Migration to cloud-based architecture (GCP / BigQuery)
+* Automated ETL pipelines
+* Real-time streaming analysis
 * Predictive modeling for user conversion
 
 ---
@@ -211,6 +199,6 @@ This project demonstrates:
 ## 👤 Author
 
 **Deepan Mehta**
-Data Analytics | preparing for Data Engineer
+Data Analytics → Data Engineering
 
 ---
