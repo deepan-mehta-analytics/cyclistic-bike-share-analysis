@@ -147,7 +147,7 @@ Google-Data-Analytics-Capstone-Cyclistic/
 │   ├── raw/
 │   └── processed/
 ├── notebooks/
-│   └── Cyclistic_Bike-Share_ETL_EDA.ipynb
+│   └── Cyclistic_Bike-Share_etl_eda.ipynb
 ├── src/
 ├── results/
 │   ├── Cyclistic_Bike-Share_Analysis.xlsx
