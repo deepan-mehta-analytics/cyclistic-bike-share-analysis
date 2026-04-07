@@ -152,7 +152,12 @@ Google-Data-Analytics-Capstone-Cyclistic/
 │   └── Cyclistic_Bike-Share_Report.pdf
 ├── results/
     ├── charts/
-        ├── avg_length.png  
+        ├── avg_length.png
+        ├── category.png
+        ├── hourly.png
+        ├── ride_distribution.png
+        ├── time.png
+        ├── weekly.png
 │   ├── Cyclistic_Bike-Share_Analysis.xlsx
 │   ├── Cyclistic_Bike-Share_Analysis.twbx
 │   ├── Cyclistic_Bike-Share_Presentation.pptx
