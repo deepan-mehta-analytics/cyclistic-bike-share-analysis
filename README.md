@@ -138,7 +138,7 @@ The analysis explores user behavior across multiple dimensions:
 
 * 📈 **Tableau Dashboard**: Available in `/results/`
 * 📊 **Excel Dashboard**: [View on Google Drive](https://docs.google.com/spreadsheets/d/1FFkyD4qh74p4Z9GKBIELzyRPFqUm7nsd/edit?usp=drive_link&ouid=105860754497024281787&rtpof=true&sd=true)
-* 📑 **Final Report**: `/reports/Cyclistic_Bike-Share_Analysis_Report.docx`
+* 📑 **Final Report**: `/reports/Cyclistic_Bike-Share_Analysis_Report.pdf`
 * 🎥 **Presentation**: `/results/Cyclistic_Bike-Share_Presentation.pptx`
 
 ---
