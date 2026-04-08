@@ -157,7 +157,7 @@ cyclistic-bike-share-analysis/
 ├── notebooks/
 │   └── Cyclistic_Bike-Share_etl_eda.ipynb
 ├── reports/
-    └── Cyclistic_Bike-Share_Analysis_Report.docx
+    └── Cyclistic_Bike-Share_Analysis_Report.pdf
 ├── results/
 │   ├── charts/
 │       ├── Cyclistic_Bike-Share_Analysis_Tableau.twbx
