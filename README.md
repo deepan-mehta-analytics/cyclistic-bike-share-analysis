@@ -150,14 +150,17 @@ cyclistic-bike-share-analysis/
 ├── README.md
 ├── data/
 │   ├── processed/
-│   └── raw/
+│       ├── Cyclistic_Bike-Share_Cleaned.zip
+│   ├── raw/
+│       ├── Divvy_Trips_2019_Q1.zip
+│       ├── Divvy_Trips_2020_Q2.zip
 ├── notebooks/
 │   └── Cyclistic_Bike-Share_etl_eda.ipynb
 ├── reports/
 ├── results/
 │   ├── charts/
-│   ├── *.twbx
-│   └── *.pptx
+│   ├── Cyclistic_Bike-Share_Analysis_Tableau.twbx
+│   └── Cyclistic_Bike-Share_Presentation.pptx
 └── .gitignore
 ```
 
