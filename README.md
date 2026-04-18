@@ -153,7 +153,7 @@ cyclistic-bike-share-analysis/
 │       └── Cyclistic_Bike-Share_Cleaned.zip
 │   ├── raw/
 │       ├── Divvy_Trips_2019_Q1.zip
-│       └── Divvy_Trips_2020_Q2.zip
+│       └── Divvy_Trips_2020_Q1.zip
 ├── notebooks/
 │   └── Cyclistic_Bike-Share_etl_eda.ipynb
 ├── reports/
