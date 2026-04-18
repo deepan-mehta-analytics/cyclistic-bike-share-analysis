@@ -38,7 +38,7 @@ The key analytical question addressed:
 
 ---
 
-## ⚙️ ETL Pipeline (Python)
+## ⚙️ ETL & Data Engineering Pipeline (Python)
 
 A structured ETL pipeline was implemented using **Pandas** to ensure data quality, consistency, and reproducibility.
 
@@ -70,7 +70,7 @@ A structured ETL pipeline was implemented using **Pandas** to ensure data qualit
   * **Member**
   * **Casual**
 
-The pipeline was designed with a focus on **reproducibility and structured data processing**, aligning with data engineering best practices.
+The pipeline was designed with a focus on reproducibility and structured data processing, aligning with data engineering best practices and making it straightforward to migrate the workflow to a cloud‑based ETL on platforms like GCP/BigQuery..
 
 ---
 
