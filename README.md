@@ -211,6 +211,7 @@ This project demonstrates:
 ## 👤 Author
 
 **Deepan Mehta**
-Data Analytics → Data Engineering
+
+Data Analytics → Data Engineering → MLOps
 
 ---
